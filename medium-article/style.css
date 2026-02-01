@@ -1,0 +1,89 @@
+body {
+  color: #494949;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300; /* 'lighter' peut varier, 300 est plus précis */
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 30px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+/* Custom design */
+.banner {
+  /* Remplacement par une image stable pour le test */
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://miro.medium.com/max/1400/1*X9bX4Yk8b5H5F3b3p3mJXQ.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: black; /* Changé en blanc pour la lisibilité sur l'image */
+  padding: 120px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 38px;
+  color: black  ;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 24px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 700px; /* Utilisation de max-width pour plus de flexibilité */
+  margin: 50px auto;
+  padding: 0 20px; /* Padding de sécurité pour mobile */
+}
+
+.link-medium {
+  display: inline-block; /* Permet une meilleure gestion des marges */
+  margin: 20px 0;
+  padding: 5px 10px;
+  background-color: #e9fdf0;
+  color: #636363;
+  font-size: 25px;
+  font-style: italic;
+  transition: background-color 0.3s ease;
+}
+
+.link-medium:hover {
+  background-color: #7dffb3;
+}
+
+/* Media queries */
+@media(max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+}
+@media(max-width: 750px) {
+  .container {
+    width: 450px;
+  }
+}
+@media(max-width: 500px) {
+  .container {
+    width: 350px;
+  }
+  .banner {
+    padding: 50px 0;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 20px;
+  }
+}
